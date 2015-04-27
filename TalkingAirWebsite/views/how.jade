@@ -1,0 +1,122 @@
+﻿extends layout
+
+block content
+
+body
+  ul.navcontainer
+      li
+        a(href='index.html') Home
+      |         
+      li
+        a(href='why.html') Why
+      |         
+      li
+        a(href='what.html') What
+      |         
+      li.highlight
+        a(href='how.html') How
+      |         
+      li
+        a(href='about.html') About
+      |         
+      li
+        a(href='contact.html') Contact
+    |     
+    .pagecontainer
+      p
+        | We are leveraging advancing sensor technology and new IoT tools to create a personal air quality monitor.  (Google IoT
+        | if you have not heard of the Internet of Things.)
+        | IoT may have reached its hype peak, but this has resulted in the creation of many new tools
+        | that are exactly what we need to
+        | lower the cost of producing sensors that work well and are connected to the internet.
+        | New hardware and software tools are being developed and released continually from major companies including:
+        | IBM, Intel, Microsoft, Taiwan Semiconductor Manufacturing Co., Foxconn Technogology Group and MediaTek.
+      |         
+      p
+        | We are currently in the design phase.  The sensors should measure PM25, ozone, and VOCs as this includes the
+        | pollutants we are most likely to encounter outdoors and indoors.  Ozone and VOCs are relatively easy to measure
+        | using well calibrated semiconductor sensors.  Particles, especially small particles, are harder to measure accurately.
+      |         
+      p
+        | (SensorName) will upload or stream data to a mobile phone or PC.  USB can be used for communicating and charging.
+        | Bluetooth or wireless, possibly both, will allow streaming and uploading data. (SensorName) needs to be able to store
+        | data when no connection is available.  We are using the Intel Edison in testing which easily meets all these requirements.
+      |         
+      p
+      |         
+      h2 Background, how it&apos;s done today:
+      |         
+      p
+        | Air quality is now available in much of the world, and both the number of stationary monitoring stations and
+        | the availability of the data are increasing.  See 
+        a(href='http://aqicn.org/') AQICN
+        |  (Air Quality Index China, although they now include
+        |             most of the world) for data and news about improving monitoring.  Many countries are now displaying their data using
+        |             the Air Quality Index, or AQI, developed by the EPA in the United States.
+      |         
+      div(style='display: flex;align-items: center;')
+        figure(style='width: 85%;')
+          img(src='images/aqicolors.jpg', alt='AQI Colors', style='width:100%;')
+          |                 
+          figurecaption
+            | AQI color coding explained.
+        |             
+        figure
+          img(src='images/aqilevels.jpg', alt='AQI Girl', style='width:100%;')
+          |                 
+          figurecaption
+            | AQI color coding explained more concisely.
+      |         
+      .bottomleft(style='background-color: #dfa217')
+        p(style='padding-left:5vw;width:45vw')
+          | AQI is based on several measurements and the worst result is reported.  For example,
+          | some cities may have very high levels of ozone in the afternoon and this can dominate other pollutants.
+          | The biggest problem in much of the world today is very fine particles, called PM 2.5 for particulates less than
+          | or equal to 2.5 microns in size. These particles are small enough to go deep into your lungs and even enter your bloodstream.
+      |         
+      .bottomright
+        img(src='images/bagotakennedy.jpg', alt='Unhealthy', style='width:80%;height:80%')
+        |             
+        .desc
+          | PM2.5 has dominated the Bagota AQI for the past two days.
+      |             
+      .bottomleft
+        img(src='images/world.bmp', alt='World')
+        |                 
+        .desc
+          | Air pollution data is occasionally available from satellites and often from monitoring stations all over the world.
+      |             
+      p
+        | The negative health effects of PM2.5 were not recognized until fairly recently, and it is also relatively difficult to
+        | measure. Many modern monitoring sites don&apos;t measure PM2.5 at all and will sometimes report a much better AQI
+        | than if they included PM2.5.  The middle picture below shows Paris (on a good day) with several green readings and a few
+        | in the yellow.  Closer inspection shows that the none of the green sites are measuring PM25. (More data thanks to AQICN.)
+      |             
+      div(style='display: flex;align-items: center;padding-bottom:2vw')
+        .img
+          img(src='images/paris25.jpg', alt='Paris PM2.5 Level', style='width:90%;align-self:center;')
+        |                 
+        .img
+          img(src='images/paris.jpg', alt='Paris Stations', style='width:90%;align-self:center;')
+        |                 
+        .img
+          img(src='images/parisno25.jpg', alt='Paris PM10 Only', style='width:90%;align-self:center;')
+    |     
+    ul.footercontainer
+      li
+        a(href='index.html') Home
+      |         
+      li
+        a(href='why.html') Why
+      |         
+      li
+        a(href='what.html') What
+      |         
+      li.highlight
+        a(href='how.html') How
+      |         
+      li
+        a(href='about.html') About
+      |         
+      li
+        a(href='contact.html') Contact
