@@ -1,0 +1,242 @@
+/*==============================================
+
+	Layout
+
+==============================================*/
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.0em;
+    background-color: #fcd801;
+}
+
+h1, h2 {
+    font-weight: normal;
+    text-rendering: optimizeLegibility; /*Helvetica is better with this in larger fonts*/
+    line-height: 1.0;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+    a:hover, a:active {
+        color: orange;
+    }
+
+.navcontainer {
+    display: flex;
+    list-style: none;
+    width: 80vw;
+    margin: 3vw auto 0.3vw auto;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.footercontainer {
+    display: flex;
+    list-style: none;
+    width: 80vw;
+    margin: 0.3vw auto 5vw auto;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+ul.navcontainer li.highlight a {
+    color: orange;
+}
+
+ul.footercontainer li.highlight a {
+    color: orange;
+}
+
+.pagecontainer {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*Using proportional vw below, don't change.  Percents don't appear to work in nested flex's*/
+    width: 80vw; /*Also, percent height is not nice in phone format*/
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #888888;
+}
+/***************************************************************/
+
+div.desc {
+    align-self: center;
+    width:80%;
+}
+/****************************************************************/
+.squareinhorizontalspring {
+    display: flex;
+    background-color: #aaaaaa;
+    background-image: url("../images/spring.jpg");
+    background-size: cover;
+    width: 49.4vw;
+    height: 49.4vw;
+}
+
+.leftvertical {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30.6vw;
+    height: 49.4vw;
+    background-color: #9dc9ff;
+}
+
+.bottomleft {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49.4vw;
+    height: 30.6vw;
+    background-color: #8dd169;
+}
+
+.bottomright {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30.6vw;
+    width: 30.6vw;
+    background-color: #9dc9ff;
+}
+
+#upperbottomleft {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: #dfa217;
+}
+
+#edison {
+    display: flex;
+    background-image: url("../images/EdisonAndSensors.jpg");
+    background-size: cover;
+    width: 18.89vw;
+    height: 18.89vw;
+}
+
+#picture {
+    display: flex;
+    background-image: url("../images/ozonecolorchart.jpg");
+    background-size: cover;
+    width: 11.67vw;
+    height: 7.2vw;
+}
+
+#la {
+    display: flex;
+    height: 40vw;
+    background-image: url("../images/la.jpg");
+    background-repeat: no-repeat;
+}
+
+#paris {
+    display: flex;
+    background-image: url("../images/paris2.jpg");
+    background-size: cover;
+    width: 40.3vw;
+    height: 30.6vw;
+}
+
+#widerect {
+    width: 80vw;
+    height: 30.6vw;
+    display: flex;
+    justify-content: space-around;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: linear-gradient(20deg, #4fec4c, #49def2);
+}
+
+@media screen and (max-width: 755px) {
+    .pagecontainer {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        width: 100vw;
+        height: auto;
+    }
+
+    .squareinhorizontalspring {
+        width: 100vw;
+        height: 100vw;
+        margin-bottom: 5vw;
+    }
+
+    .leftvertical {
+        width: 100vw;
+        height: auto;
+    }
+
+    #upperbottomleft {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    #edison {
+        width: 50vw;
+        height: 50vw;
+        margin-left: 25vw;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    #picture {
+        width: 50vw;
+        height: 30.9vw;
+        margin-left: 25vw;
+        margin-bottom: 5vw;
+    }
+
+    .bottomleft {
+        width: 100vw;
+        height: 100vw;
+        margin-bottom: 5vw;
+    }
+
+    .bottomright {
+        width: 100vw;
+        height: 100vw;
+        margin-bottom: 5vw;
+    }
+}
