@@ -1,0 +1,15 @@
+
+body {
+  background-color: #90bbef;
+}
+form, h3 {
+  text-align: center;
+}
+.pagediv {
+  width:80vw;
+  height: auto;
+  background-color: #ed7a58;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5vw;
+}
