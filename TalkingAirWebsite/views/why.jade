@@ -1,0 +1,81 @@
+﻿doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='css/mainstyles.css')
+    link(rel='stylesheet', type='text/css', href='css/info.css')
+    title Why
+  body
+    ul.navcontainer
+      li
+        a(href='index.html') Home
+      li.highlight
+        a(href='why.html') Why
+      li
+        a(href='what.html') What
+      li
+        a(href='how.html') How
+      li
+        a(href='about.html') About
+      li
+        a(href='contact.html') Contact
+    .pagecontainer(style='-ms-flex-direction: column; flex-direction:column')
+      div(style='display:flex')
+        #paris
+          p(style='padding-right:13vw;')
+            | This project is an opportunity to improve our own health and help make the world a
+            | better place for everyone.
+        p(style='padding-left:8vw;padding-top:8vw;width:35vw')
+          | Many people are concerned about eating the right foods and exercising. What we
+          | breath matters too. Air pollution is a health problem in much of the world today. You can often take action
+          | to reduce your exposure. You can also help to improve the environment directly by conserving energy, and
+          | indirectly by supporting the right legislation.
+      #widerect
+        p(style='padding-left:8vw;width:45vw')
+          | Air pollution is more pervasive than you might think. Current station measurements are not
+          | on the street or in your home; no one is monitoring the air you actually breath.
+        p(style='padding-left:20vw;width:65vw')
+          | Being able to measure the air quality directly where and when you are breathing will allow you to make informed
+          | decisions to reduce your exposure.  For example, take a different road with less traffic or do your high intensity
+          | exercise where the air is best.  If more air quality data is publicly available people will be able to make better decisions
+          | about how to prevent it.  If more people hear about it more people will care about it and take action.
+      div(style='display: flex; height:25vw')
+        div(style='display: flex; -ms-flex-direction: column; flex-direction: column; background-color: #fcd801;width:80vw')
+          p
+            | "The Los Angeles region ranked fourth among metropolitan areas nationwide for short-term spikes in fine particle
+            | pollution, coming in behind Fresno, Visalia and Bakersfield." Los Angeles Times, April 2014
+          p "German air pollution rises despite green zones" Deutsche Welle
+          p "Paris car ban imposed after pollution hits high" BBC.com March 2014
+          p
+            | "Africa is urbanizing quickly, and pollution from sources like vehicle exhaust, wood burning and dusty
+            | dirt roads has reached worrisome levels in many cites." New York Times, April 2014
+        figure(style='width:70%')
+          img(src='images/n95mask.jpg', alt='N95 Mask', style='width: 100%;')
+          figurecaption
+            | If you use a mask, use one that works for the pollutants in your area. This N95 mask reduces
+            | the PM2.5 particles you breath by 95%.
+      p
+        | There are many sources of PM2.5 pollutants.  Diesel powered vehicles and wood burning are major sources.  If you don't smoke or
+        | burn incense or live in a heavily polluted area like Beijing, cooking is probably the major source of PM2.5 in your home.
+      div(style='display: flex;align-items: center;height:30.6vw;')
+        figure
+          img(src='images/pm25london.jpg', alt='London', style='width:100%;')
+          figurecaption
+            | The London PM2.5 values above are in ug/m3, not AQI.
+        figure(style='width:95%;')
+          img(src='images/pm-source-apportionmentFairbanks.jpg', alt='Fairbanks', style='width:100%;')
+          figurecaption Wood smoke is the major source of PM2.5 in Fairbanks, Alaska.
+    ul.footercontainer
+      li
+        a(href='index.html') Home
+      li.highlight
+        a(href='why.html') Why
+      li
+        a(href='what.html') What
+      li
+        a(href='how.html') How
+      li
+        a(href='about.html') About
+      li
+        a(href='contact.html') Contact

@@ -1,0 +1,39 @@
+﻿doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='css/mainstyles.css')
+    link(rel='stylesheet', type='text/css', href='css/contact.css')
+    title Contact Us
+  body
+    ul.navcontainer
+      li
+        a(href='index.html') Home
+      li
+        a(href='why.html') Why
+      li
+        a(href='what.html') What
+      li
+        a(href='how.html') How
+      li
+        a(href='about.html') About
+      li.highlight(t='')
+        a(href='contact.html') Contact
+    .pagediv
+      br
+      h1 Contact Us
+      h3 Send us your name and email address and we will get back to you.
+      form(action='http://formspree.io/chip@garnertotalenergy.com', method='POST')
+        div
+          | Your Name:
+          input(type='text', name='name')
+        br
+        div
+          | Your Email:
+          input(type='email', name='_replyto')
+        br
+        input(type='hidden', name='_subject', value='TalkingAir Contact')
+        input(type='text', name='_gotcha', style='display:none')
+        input(type='submit', value='Send')
+      p We don't save your information in a database.
