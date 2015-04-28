@@ -1,25 +1,21 @@
-﻿doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css', href='css/mainstyles.css')
-    link(rel='stylesheet', type='text/css', href='css/contact.css')
-    title Contact Us
+﻿extends layout
+
+block content
+
   body
     ul.navcontainer
       li
-        a(href='index.html') Home
+        a(href='/') Home
       li
-        a(href='why.html') Why
+        a(href='/why') Why
       li
-        a(href='what.html') What
+        a(href='/what') What
       li
-        a(href='how.html') How
+        a(href='/how') How
       li
-        a(href='about.html') About
-      li.highlight(t='')
-        a(href='contact.html') Contact
+        a(href='/about') About
+      li.highlight
+        a(href='/contact') Contact
     .pagediv
       br
       h1 Contact Us

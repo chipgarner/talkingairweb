@@ -1,25 +1,21 @@
-﻿doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css', href='css/mainstyles.css')
-    link(rel='stylesheet', type='text/css', href='css/info.css')
-    title Why
+﻿extends layout
+
+block content
+
   body
     ul.navcontainer
       li
-        a(href='index.html') Home
+        a(href='/') Home
       li.highlight
-        a(href='why.html') Why
+        a(href='/why') Why
       li
-        a(href='what.html') What
+        a(href='/what') What
       li
-        a(href='how.html') How
+        a(href='/how') How
       li
-        a(href='about.html') About
+        a(href='/about') About
       li
-        a(href='contact.html') Contact
+        a(href='/contact') Contact
     .pagecontainer(style='-ms-flex-direction: column; flex-direction:column')
       div(style='display:flex')
         #paris
@@ -51,7 +47,7 @@ html(lang='en')
             | "Africa is urbanizing quickly, and pollution from sources like vehicle exhaust, wood burning and dusty
             | dirt roads has reached worrisome levels in many cites." New York Times, April 2014
         figure(style='width:70%')
-          img(src='images/n95mask.jpg', alt='N95 Mask', style='width: 100%;')
+          img(src='/images/n95mask.jpg', alt='N95 Mask', style='width: 100%;')
           figurecaption
             | If you use a mask, use one that works for the pollutants in your area. This N95 mask reduces
             | the PM2.5 particles you breath by 95%.
@@ -60,11 +56,11 @@ html(lang='en')
         | burn incense or live in a heavily polluted area like Beijing, cooking is probably the major source of PM2.5 in your home.
       div(style='display: flex;align-items: center;height:30.6vw;')
         figure
-          img(src='images/pm25london.jpg', alt='London', style='width:100%;')
+          img(src='/images/pm25london.jpg', alt='London', style='width:100%;')
           figurecaption
             | The London PM2.5 values above are in ug/m3, not AQI.
         figure(style='width:95%;')
-          img(src='images/pm-source-apportionmentFairbanks.jpg', alt='Fairbanks', style='width:100%;')
+          img(src='/images/pm-source-apportionmentFairbanks.jpg', alt='Fairbanks', style='width:100%;')
           figurecaption Wood smoke is the major source of PM2.5 in Fairbanks, Alaska.
     ul.footercontainer
       li
