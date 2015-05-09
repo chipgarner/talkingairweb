@@ -6,34 +6,10 @@ block extraHeader
 block content
 
   body
-    ul.navcontainer
-      li
-        a(href='/') Home
-      li
-        a(href='/why') Why
-      li.highlight
-        a(href='/what') What
-      li
-        a(href='/how') How
-      li
-        a(href='/about') About
-      li
-        a(href='/contact') Contact
+    include includes/header
     .pagecontainer
       #la
         p(style='width:40%')
           | Economical, small, light weight, low power, accurate, GPS and internet connected.
         p(style='width:40%') Measure the main pollutants: PM25, Ozone, Volatile Organic Compounds (VOCs).
-    ul.footercontainer
-      li
-        a(href='index.html') Home
-      li
-        a(href='why.html') Why
-      li.highlight
-        a(href='what.html') What
-      li
-        a(href='how.html') How
-      li
-        a(href='about.html') About
-      li
-        a(href='contact.html') Contact
+    include includes/footer

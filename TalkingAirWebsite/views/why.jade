@@ -7,19 +7,7 @@ block extraHeader
 block content
 
   body
-    ul.navcontainer
-      li
-        a(href='/') Home
-      li.highlight
-        a(href='/why') Why
-      li
-        a(href='/what') What
-      li
-        a(href='/how') How
-      li
-        a(href='/about') About
-      li
-        a(href='/contact') Contact
+    include includes/header
     .pagecontainer(style='-ms-flex-direction: column; flex-direction:column')
       div(style='display:flex')
         #paris
@@ -66,16 +54,4 @@ block content
         figure(style='width:95%;')
           img(src='/images/pm-source-apportionmentFairbanks.jpg', alt='Fairbanks', style='width:100%;')
           figurecaption Wood smoke is the major source of PM2.5 in Fairbanks, Alaska.
-    ul.footercontainer
-      li
-        a(href='index.html') Home
-      li.highlight
-        a(href='why.html') Why
-      li
-        a(href='what.html') What
-      li
-        a(href='how.html') How
-      li
-        a(href='about.html') About
-      li
-        a(href='contact.html') Contact
+    include includes/footer

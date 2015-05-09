@@ -5,75 +5,33 @@ block extraHeader
 
 block content
   body
-    |         
-    ul.navcontainer
-      li.highlight
-        a(href='/') Home
-      |             
-      li
-        a(href='/why') Why
-      |             
-      li
-        a(href='/what') What
-      |             
-      li
-        a(href='/how') How
-      |             
-      li
-        a(href='/about') About
-      |             
-      li
-        a(href='/contact') Contact
-    |         
+    include includes/header
     .pagecontainer
       .leftvertical
         div
           h1 This is TalkingAir
-          |                     
           h2 Improving air quality through knowledge.
-        |                 
         div
           p
-            | The air doesn&apos;t actually talk.  If we connect it to sensors it can tell us things.
+            | The air doesn't actually talk.  If we connect it to sensors it can tell us things.
           p
             #upperbottomleft
               #edison
               #picture
-      .squareinhorizontalspring      |             
+      .squareinhorizontalspring
       .bottomleft
         p(style='padding-left:3vw;width:45vw')
           | Our goal at TalkingAir is to get more sensors measuring what the air has in it and making the data as widely
           | available as possible.  In other words, listening to the air and telling people about it. We believe that ubiquitous
           | air monitoring will lead to worldwide improvement in air quality.
-        |                 
         p(style='padding-left:12vw;width:45vw')
           | We want to create inexpensive, portable, geolocated and connected air quality sensors. Inexpensive so that
           | many of us can afford it. Portable so it can be used anywhere, allowing us to reduce our exposure. Geolocated and connected
           | so that we can share the data.
-      |             
       .bottomright
-        img(src='/images/bagota.jpg', alt='Bagota', style='width:80%;height:80%')
-        |                     
+        img(src='images/bagota.jpg', alt='Bagota', style='width:80%;height:80%')
         .desc
           | How is the air in your city? Visit 
           a(href='http://aqicn.org/') AQICN
           |  and find out.
-    |         
-    ul.footercontainer
-      li.highlight
-        a(href='index.html') Home
-      |             
-      li
-        a(href='why.html') Why
-      |             
-      li
-        a(href='what.html') What
-      |             
-      li
-        a(href='how.html') How
-      |             
-      li
-        a(href='about.html') About
-      |             
-      li
-        a(href='contact.html') Contact
+    include includes/footer

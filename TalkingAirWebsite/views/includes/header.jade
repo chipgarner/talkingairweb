@@ -1,0 +1,16 @@
+﻿ul.navcontainer
+    each menu in ["Home", "Why", "What", "How", "About", "Contact"]
+        if (menu == pageName)
+          if (menu.indexOf("Home") > -1)
+            li.highlight
+              a(href="/")= menu
+          else
+            li.highlight
+              a(href="/#{menu}")= menu
+        else
+          if (menu.indexOf("Home") > -1)
+            li
+              a(href="/")= menu
+          else
+            li
+              a(href="/#{menu}")= menu

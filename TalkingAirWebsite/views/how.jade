@@ -6,19 +6,7 @@ block extraHeader
 block content
 
   body
-    ul.navcontainer
-      li
-        a(href='/') Home
-      li
-        a(href='/why') Why
-      li
-        a(href='/what') What
-      li.highlight
-        a(href='/how') How
-      li
-        a(href='/about') About
-      li
-        a(href='/contact') Contact
+    include includes/header
     .pagecontainer
       p
         | We are leveraging advancing sensor technology and new IoT tools to create a personal air quality monitor.  (Google IoT
@@ -80,16 +68,4 @@ block content
           img(src='/images/paris.jpg', alt='Paris Stations', style='width:90%;align-self:center;')
         .img
           img(src='/images/parisno25.jpg', alt='Paris PM10 Only', style='width:90%;align-self:center;')
-    ul.footercontainer
-      li
-        a(href='index.html') Home
-      li
-        a(href='why.html') Why
-      li
-        a(href='what.html') What
-      li.highlight
-        a(href='how.html') How
-      li
-        a(href='about.html') About
-      li
-        a(href='contact.html') Contact
+    include includes/footer
