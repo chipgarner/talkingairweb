@@ -35,6 +35,8 @@
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
+    <Content Include="locales\cn-TW\translation.json" />
+    <Content Include="locales\en-US\translation.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="Web.config" />
@@ -52,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="locales\" />
+    <Folder Include="locales\cn-TW\" />
+    <Folder Include="locales\en-US\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />

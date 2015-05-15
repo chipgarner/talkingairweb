@@ -9,7 +9,7 @@ block content
     .pagecontainer
       .leftvertical
         div
-          h1 This is TalkingAir
+          h1= t('app.indexH1')
           h2 Improving air quality through knowledge.
         div
           p
@@ -35,3 +35,10 @@ block content
           a(href='http://aqicn.org/') AQICN
           |  and find out.
     include includes/footer
+  ul 
+    li
+        a#de(href='/?setLng=en-US')= t('app.english')
+    li
+        a#de(href='/?setLng=cn-TW')= t('app.chinese')
+
+
