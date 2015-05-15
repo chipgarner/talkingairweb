@@ -35,8 +35,12 @@
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
-    <Content Include="locales\cn-TW\translation.json" />
-    <Content Include="locales\en-US\translation.json" />
+    <Content Include="locales\cn-TW\translation.json">
+      <Publish>True</Publish>
+    </Content>
+    <Content Include="locales\en-US\translation.json">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="Web.config" />
