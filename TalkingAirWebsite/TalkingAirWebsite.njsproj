@@ -38,6 +38,9 @@
     <Content Include="locales\cn-TW\translation.json">
       <Publish>True</Publish>
     </Content>
+    <Content Include="locales\dev\translation.json">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="locales\en-US\translation.json">
       <Publish>True</Publish>
     </Content>
@@ -60,6 +63,7 @@
     <Folder Include="bin\" />
     <Folder Include="locales\" />
     <Folder Include="locales\cn-TW\" />
+    <Folder Include="locales\dev\" />
     <Folder Include="locales\en-US\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />

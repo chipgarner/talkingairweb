@@ -1,4 +1,5 @@
-﻿var express = require('express');
+﻿var debug = require('debug')('src');
+var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -6,10 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var i18n = require('i18next');
 
-i18n.init({
-    lng: 'en-US',
-    saveMissing: true
-});
+i18n.init({ debug: true });
  
 var routes = require('./routes/index');
 var users = require('./routes/users');
