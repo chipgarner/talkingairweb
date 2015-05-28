@@ -14,4 +14,11 @@
           else
             li
               a(href="/#{menu}")= menu
-      
+     
+ul 
+    li
+        a(href='/?setLng=en-US')= t('app.english')
+    li
+        a(href='/?setLng=cn-TW')= t('app.chinese')
+    li
+        a(href='/?setLng=cl-CO')= t('app.clingon')

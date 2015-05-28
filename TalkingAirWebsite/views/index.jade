@@ -10,20 +10,16 @@ block content
       .leftvertical
         div
           h1= t('app.indexH1')
-          h2 Improving air quality through knowledge.
+          h2= t('app.indexH2')
         div
-          p
-            | The air doesn't actually talk.  If we connect it to sensors it can tell us things.
+          p= t('app.Doesnt')
           p
             #upperbottomleft
               #edison
               #picture
       .squareinhorizontalspring
       .bottomleft
-        p(style='padding-left:3vw;width:45vw')
-          | Our goal at TalkingAir is to get more sensors measuring what the air has in it and making the data as widely
-          | available as possible.  In other words, listening to the air and telling people about it. We believe that ubiquitous
-          | air monitoring will lead to worldwide improvement in air quality.
+        p(style='padding-left:3vw;width:45vw')= t('app.ourgoal')
         p(style='padding-left:12vw;width:45vw')
           | We want to create inexpensive, portable, geolocated and connected air quality sensors. Inexpensive so that
           | many of us can afford it. Portable so it can be used anywhere, allowing us to reduce our exposure. Geolocated and connected
@@ -35,12 +31,3 @@ block content
           a(href='http://aqicn.org/') AQICN
           |  and find out.
     include includes/footer
-  ul 
-    li
-        a#de(href='/?setLng=en-US')= t('app.english')
-    li
-        a#de(href='/?setLng=cn-TW')= t('app.chinese')
-    li
-        a#de(href='/?setLng=cl-CO')= t('app.clingon')
-
-

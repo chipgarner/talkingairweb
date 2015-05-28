@@ -1,7 +1,7 @@
 ﻿{
     "app": {
         "indexH1": "這是追著跑",
-        "chinese": "中國傳統",
-        "english": "english"
+        "indexH2": "通過提高知識的空氣質量。",
+        "Doesnt": "The air doesn't actually talk.  If we connect it to sensors it can tell us things."
     }
 }
