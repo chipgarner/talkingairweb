@@ -23,8 +23,7 @@ block content
         p(style='padding-left:12vw;width:45vw')= t('app.inexpensive')
       .bottomright
         img(src='images/bagota.jpg', alt='Bagota', style='width:80%;height:80%')
-        .desc
-          | How is the air in your city? Visit 
-          a(href='http://aqicn.org/') AQICN
-          |  and find out.
+        .desc= t('app.howistheairStart')
+            a(href=t('app.AQICNref'))=t('app.AQICN')
+            != t('app.howistheairEnd')
     include includes/footer

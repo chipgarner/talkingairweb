@@ -1,8 +1,5 @@
 ﻿{
     "app": {
-        "indexH1": "This is Talking Air",
-        "indexH2": "Improving air quality through knowledge.",
-        "inexpensive": "We want to create inexpensive, portable, geolocated and connected air quality sensors. Inexpensive so that many of us can afford it. Portable so it can be used anywhere, allowing us to reduce our exposure. Geolocated and connected so that we can share the data.",
         "chinese": "中國傳統",
         "english": "English",
         "clingon": "Clingon"
