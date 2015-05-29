@@ -35,6 +35,15 @@
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
+    <Content Include="bin\locales\cn-TW\translation.json">
+      <Publish>True</Publish>
+    </Content>
+    <Content Include="bin\locales\dev\translation.json">
+      <Publish>True</Publish>
+    </Content>
+    <Content Include="bin\locales\en-US\translation.json">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="locales\cn-TW\translation.json">
       <Publish>True</Publish>
     </Content>
@@ -61,6 +70,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="bin\locales\" />
+    <Folder Include="bin\locales\cn-TW\" />
+    <Folder Include="bin\locales\dev\" />
+    <Folder Include="bin\locales\en-US\" />
     <Folder Include="locales\" />
     <Folder Include="locales\cn-TW\" />
     <Folder Include="locales\dev\" />

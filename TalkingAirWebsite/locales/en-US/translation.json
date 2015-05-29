@@ -5,9 +5,9 @@
         "Doesnt": "The air doesn't actually talk.  If we connect it to sensors it can tell us things.",
         "ourgoal": "Our goal at TalkingAir is to get more sensors measuring what the air has in it and making the data as widely available as possible.  In other words, listening to the air and telling people about it. We believe that ubiquitous air monitoring will lead to worldwide improvement in air quality.",
         "inexpensive": "We want to create inexpensive, portable, geolocated and connected air quality sensors. Inexpensive so that many of us can afford it. Portable so it can be used anywhere, allowing us to reduce our exposure. Geolocated and connected so that we can share the data.",
+        "howistheairStart":  "How is the air in your city? Visit ",
         "AQICNref": "http://aqicn.org/",
         "AQICN":  "AQICN",
-        "howistheairStart":  "How is the air in your city? Visit ",
         "howistheairEnd":  " and find out."
     }
 }
