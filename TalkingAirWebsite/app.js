@@ -6,6 +6,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var i18n = require('i18next');
+// cfenv provides access to your Cloud Foundry environment
+// for more info, see: https://www.npmjs.com/package/cfenv
+var cfenv = require('cfenv');
 
 i18n.init({ debug: true });
  
@@ -13,6 +16,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
+// get the app environment from Cloud Foundry
+var appEnv = cfenv.getAppEnv();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -64,3 +70,11 @@ app.use(function (err, req, res, next) {
 
 i18n.registerAppHelper(app);
 module.exports = app;
+
+// start server on the specified port and binding host
+app.listen(appEnv.port, appEnv.bind, function () {
+    
+    // print a message when the server starts listening
+    console.log("server starting on " + appEnv.url);
+});
+
