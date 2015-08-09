@@ -1,13 +1,13 @@
 {
   "app": {
-    "indexH1": "這是追著跑",
-    "indexH2": "通過提高知識的空氣質量。",
-    "Doesnt": "The air doesn't actually talk.  If we connect it to sensors it can tell us things.",
-    "ourgoal": "我們在TalkingAir目標是獲得更多的傳感器測量什麼的空氣具有在它和使該數據作為廣泛使用越好。換句話說，聽著空氣，告訴人們它。我們認為，普遍存在的空氣監測將導致空氣質量全世界改善。",
-    "inexpensive": "We want to create inexpensive, portable, geolocated and connected air quality sensors. Inexpensive so that many of us can afford it. Portable so it can be used anywhere, allowing us to reduce our exposure. Geolocated and connected so that we can share the data.",
-    "howistheairStart":  "How is the air in your city? Visit ",
+    "indexH1": "這是©【追著跑】",
+    "indexH2": "用來提升對空氣品質的知識",
+    "Doesnt": "空氣不實際交談。如果我們將它連接到傳感器，它可以告訴我們想要的東西。",
+    "ourgoal": "【追著跑】的目標是獲得更多的傳感器來測量空氣中的成分是什麼，然後將該數據廣泛使用。換句話說，伶聽空氣，告訴人們它的訊息。我們認為，空氣監測將有助於全世界空氣質量改善。",
+    "inexpensive": "我們要創造物美價廉，方便攜帶，並且的地理定位連接空氣質量傳感器。價格低廉，使我們許多人可以負擔得起。攜帶式可以在任何地方使用，降低我們的風險。透過地理定位和連接，使我們可以共享數據。",
+    "howistheairStart": "在你住的城市空氣又是如何？請進入查詢 ",
     "AQICNref": "http://aqicn.org/city/taipei/hk",
-    "AQICN":  "AQICN",
-    "howistheairEnd":  " and find out."
+    "AQICN": "AQICN",
+    "howistheairEnd": "並查出"
   }
 }
