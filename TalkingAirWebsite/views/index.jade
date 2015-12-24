@@ -11,15 +11,26 @@ block content
         div
           h1= t('app.indexH1')
           h2= t('app.indexH2')
+          p We have moved on and are now working on art projects, 
+            |including using neural networks to create and modify images. 
+            |A new website is coming soon. See 
+            a(href=t('app.AirCastingRef'))=t('app.AirCasting')
+            |  for a cool air monitoring device.
         div
           p= t('app.Doesnt')
           #upperbottomleft
             #edison
-            #picture
+            div
+              #picture 
+              //Fibonacci only partly works, text gets smaller
+              p(style='padding-left:0.2vw;width:11.676vw;font-size:1.4vw') Fn = Fn-1 + Fn-2, 
+                br 
+                |F0 = 0, F1 = 1.
       .squareinhorizontalspring
       .bottomleft
         p(style='padding-left:3vw;width:45vw')= t('app.ourgoal')
         p(style='padding-left:12vw;width:45vw')= t('app.inexpensive')
+          a(href=t('app.AirCastingRef'))=t('app.AirCasting')
       .bottomright
         img(src='images/bagota.jpg', alt='Bagota', style='width:80%;height:80%')
         .desc= t('app.howistheairStart')
